@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width:0 ;
+}
+html {
+  background: black;
+  overflow-x: hidden; /* Esconde a rolagem lateral */
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden; /* Esconde a rolagem lateral */
+}
+
+#app {
+  max-width: 112rem;
+  max-height: 68.8rem;
+  margin: 0 auto;
+  padding-inline: 4rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8.7rem;
+  margin-top: 11.5rem;
+}
+#logo{
+  padding-right: 3rem;
+}
+.search{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  max-width: 64rem;
+  max-height: 4.8rem;
+  width: 100%;
+  height: 100%;
+}
+#input-search{
+  border: none;
+  color: white;
+  font-size: 1.7rem;
+  background-color: #06181C;
+  border-radius: .4rem;
+  padding:  1.6rem;
+  max-width: 64rem;
+  max-height: 4.8rem;
+  width: 100%;
+  height: 100%;
+}
+table {
+  color: #E1E1E6;
+  width: 100%;
+  border-collapse: collapse;
+}
+thead,tbody{
+  font-family: "Roboto",sans-serif;
+}
+.user {
+  display: flex; /* Alinha os itens em linha */
+  align-items: center; /* Centraliza verticalmente os itens */
+  max-width: 50.4rem;
+  padding-left: 1.5rem;
+}
+
+td.user a {
+  text-decoration: none;
+  display: flex; /* Certifica que o conteúdo dentro do <a> seja alinhado horizontalmente */
+  align-items: center; /* Centraliza verticalmente dentro do <a> */
+  color: inherit; /* Herdar a cor do texto */
+}
+
+td.user a p {
+  margin: 0 8px; /* Adiciona espaço entre o texto e a imagem */
+  font-weight: bold;
+  line-height: 140%;
+  font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+
+}
+
+td.user a span {
+  line-height: 140%;
+  font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+  margin-left: 8px; /* Espaço entre o `p` e o `span` */
+  color: #E1E1E6; /* A cor que preferir */
+}
+
+.user img {
+  border-radius: 50%;
+  max-width: 5.6rem;
+  max-height: 5.6rem;
+  margin-right: 1.6rem;
+  margin-left: 2rem;
+  margin-block: 1.4rem;
+}
+#userhead{
+  padding-left: 4rem;
+}
+thead, tbody {
+  padding: 8px;
+  text-align: left;
+}
+
+thead{
+  border-bottom:none;
+}
+tbody{
+  border-top: none;
+}
+
+table tr:nth-child(even){
+  background-color: rgba(56, 91, 99, 0.5); /* Cor de fundo com transparência */
+  border-top: solid 1.5px #15728e;
+}
+table tr:nth-child(odd){
+  background-color: rgba(6, 22, 27, 0.5);
+}
+tr th{
+  font-family: 'roboto', sans-serif;
+  font-weight: bold;
+  line-height: 160%;
+  font-size: 2rem;
+}
+
+th {
+  background-color: #092D38; /* Cor de fundo do cabeçalho */
+  color: #E1E1E6;
+  padding-block: 1.6rem;
+}
+.repositories{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.followers{
+  font-weight: bold;
+  font-size: 2rem;
+}
+.remove{
+  font-weight: bold;
+  font-size: 2rem;
+  color: #f94d5b;
+}
+.remove:hover{
+  color: #d50516;
+  cursor: pointer;
+}

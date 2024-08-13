@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/script.js" type="module" defer></script>
+    <title>Favorite Table</title>
+</head>
+<body>
+<div id="app">
+  <header>
+  <img id="logo" src="./assets/Gitfav.svg" alt="GitFav">
+  <div class="search">
+    <label class="sr-only" for="input-search">Usuario do Github</label>
+    <input id="input-search" type="text" placeholder="Digite o Github username que você quer favoritar">
+    <img src="./assets/Button.svg" alt="">
+  </div>
+</header>
+  <table>
+      <thead>
+          <tr>
+              <th id="userhead">Usuário</th>
+              <th>Repositorios</th>
+              <th>Followers</th>
+              <th>Ação</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td class="user">
+              <a href="https://github.com/kardven" target="_blank">
+                <img src="https://github.com/kardven.png" alt="Imagem de kardven">
+                <div class="user-info">
+                  <p>Walison Souza</p>
+                  <span>Kardven</span>
+                </div>
+              </a>
+            </td>
+              <td class="repositories">76</td>
+              <td class="followers">123</td>
+              <td class="remove">Remover</td>
+          </tr>
+          <tr>
+            <td class="user">
+              <a href="https://github.com/kardven" target="_blank">
+                <img src="https://github.com/kardven.png" alt="Imagem de kardven">
+                <div class="user-info">
+                  <p>Walison Souza</p>
+                  <span>Kardven</span>
+                </div>
+              </a>
+            </td>
+              <td class="repositories">76</td>
+              <td class="followers">123</td>
+              <td class="remove">Remover</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+</body>
+</html>
